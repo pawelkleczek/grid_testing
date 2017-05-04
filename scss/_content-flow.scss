@@ -1,11 +1,10 @@
-
-.col-8 {
-	border: 1px dashed $border-color;
+.col-4, .col-8 {
+	border: 2px solid $border-color;
 }
 
 header {
-	height: 20vh;
 	border: 1px solid indianred;
+
 	h1 {
 		font-family: 'Amatic SC', cursive;
 		margin: 0 auto;
@@ -21,11 +20,22 @@ main {
 	height: 60vh;
 	border: 1px solid indianred;
 	color: rgba(0,0,0, 0.5);
-	.col-8 {
+	.col-4 {
+
+		padding-left: 10px;
+
 		i {
-			display: block;
+			width: 20px;
+			text-align: center;
+		}
+		.basic-info {
+
 		}
 	}
+	.border-right {
+		border-right: 2px dotted $border-color;
+	}
+
 
 	span {
 		font-family: 'Amatic SC', cursive;
@@ -44,8 +54,6 @@ footer {
 	height: 20vh;
 	border: 1px solid indianred;
 }
-
-
 
 p {
 	font-family: 'Open Sans', sans-serif;

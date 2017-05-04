@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&subset=latin-ext');
 
 * {
 	margin: 0;
@@ -42,5 +45,55 @@ $width-base: (100%/$cols);
 		.col-#{$i} {
 			width: $width-base*$i;
 		}
+	}
+}
+
+@mixin triangle($direction, $color, $size) {
+	width: 0;
+	height: 0;
+	border: $size solid transparent;
+	border-#{$direction}: 20px solid $color;
+}
+
+$deco: none;
+$link: $link-color;
+$visit: $link-visited;
+$activ: $link-active;
+$hover: $link-hover;
+$opaci: .5;
+
+@mixin link {
+	& {
+		text-decoration: $deco;
+	}
+
+	&:link {
+		color: $link;
+		opacity: $opaci;
+	}
+
+	&:visited {
+		color: $link;
+		opacity: $opaci;
+	}
+
+	&:hover {
+		color: $hover;
+		opacity: ($opaci + .2);
+	}
+
+	&:active {
+		color: $hover;
+		opacity: ($opaci - .2);
+	}
+
+	&:visited:hover {
+		color: $hover;
+		opacity: ($opaci + .2);
+	}
+
+	&:visited:active {
+		color: $hover;
+		opacity: ($opaci - .2);
 	}
 }

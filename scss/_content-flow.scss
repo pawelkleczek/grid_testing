@@ -1,13 +1,10 @@
-.col-4, .col-8 {
-	border: 2px solid $border-color;
-}
-
 header {
-	border: 1px solid indianred;
 
 	h1 {
 		font-family: 'Amatic SC', cursive;
 		margin: 0 auto;
+		text-align: center;
+		font-size: 3.2rem;
 
 		span {
 			color: $font-color2;
@@ -17,37 +14,52 @@ header {
 }
 
 main {
-	height: 60vh;
-	border: 1px solid indianred;
 	color: rgba(0,0,0, 0.5);
-	.col-4 {
 
+	.col-4, .col-8 {
 		padding-left: 10px;
-
-		i {
-			width: 20px;
-			text-align: center;
-		}
-		.basic-info {
-
-		}
 	}
-	.border-right {
-		border-right: 2px dotted $border-color;
+	.fa {
+		width: 40px;
+		text-align: center;
+		font-size: 2rem;
 	}
 
+	.basic-info {
+		border-bottom: 2px dashed $border-color;
+		margin-right: 10px;
+		.fa {
+			float: left;
+		}
+	}
 
 	span {
 		font-family: 'Amatic SC', cursive;
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 		font-weight: 700;
-		margin: 5px;
+		margin-left: 15px;
+		display: block;
+		overflow: hidden;
 	}
 
 	a {
 		@include link;
 	}
 
+}
+
+.skills {
+
+}
+
+.skills h2 {
+
+}
+
+.skills .fa {
+	color: indianred;
+
+	display: block;
 }
 
 footer {

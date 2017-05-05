@@ -40,7 +40,7 @@ $width-base: (100%/$cols);
 
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 35rem) {
 	@for $i from 1 through $cols {
 		.col-#{$i} {
 			width: $width-base*$i;
@@ -56,8 +56,8 @@ $width-base: (100%/$cols);
 }
 
 $deco: none;
-$link: $link-color;
-$visit: $link-visited;
+$link: $link-active;
+$visit: $link-active;
 $activ: $link-active;
 $hover: $link-hover;
 $opaci: .5;

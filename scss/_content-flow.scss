@@ -7,10 +7,15 @@ header {
 		font-size: 3.2rem;
 
 		span {
-			color: $font-color2;
+			color: $secondary-color;
 		}
 	}
 
+}
+
+header + hr {
+	margin: 0 10px;
+	border: 2px dotted $secondary-color;
 }
 
 main {
@@ -26,8 +31,9 @@ main {
 	}
 
 	.basic-info {
-		border-bottom: 2px dashed $border-color;
+		border-bottom: 2px dashed $main-color;
 		margin-right: 10px;
+		line-height: 2.4rem;
 		.fa {
 			float: left;
 		}
@@ -50,23 +56,48 @@ main {
 
 .skills {
 
+	margin-top: 20px;
+
+
+
+	.more-info {
+		width: 100%;
+	}
+	.skill-header {
+		line-height: 2rem;
+		overflow: hidden;
+	}
+
+	h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 2rem;
+	float: left;
+	margin-left: 10px;
+	}
+
+	.fa {
+		color: $secondary-color;
+		float: left;
+		margin-left: 30%;
+	}
+
+	ul {
+		width: 80%;
+		margin: 0 auto;
+		border-left: 2px dotted $main-color;
+		padding: 5px;
+		list-style-type: none;
+		font-family: 'Nunito', cursive;
+	}
 }
 
-.skills h2 {
 
-}
-
-.skills .fa {
-	color: indianred;
-
-	display: block;
-}
 
 footer {
 	height: 20vh;
-	border: 1px solid indianred;
+	border: 1px solid $secondary-color;
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }

@@ -56,10 +56,10 @@ $width-base: (100%/$cols);
 }
 
 $deco: none;
-$link: $link-active;
-$visit: $link-active;
-$activ: $link-active;
-$hover: $link-hover;
+$link: $main-color;
+$visit: $main-color;
+$activ: $main-color;
+$hover: $main-color;
 $opaci: .5;
 
 @mixin link {
@@ -69,12 +69,10 @@ $opaci: .5;
 
 	&:link {
 		color: $link;
-		opacity: $opaci;
 	}
 
 	&:visited {
 		color: $link;
-		opacity: $opaci;
 	}
 
 	&:hover {

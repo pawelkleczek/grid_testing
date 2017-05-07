@@ -30,6 +30,7 @@ $width-base: (100%/$cols);
 
 .stol {
 	@extend %clearfix;
+	padding-top: 10px;
 }
 
 [class*='col-'] {
@@ -56,11 +57,11 @@ $width-base: (100%/$cols);
 }
 
 $deco: none;
-$link: $main-color;
-$visit: $main-color;
-$activ: $main-color;
-$hover: $main-color;
-$opaci: .5;
+$link: $link-color;
+$visit: $link-color;
+$activ: $link-color;
+$hover: $link-color;
+$opaci: .7;
 
 @mixin link {
 	& {
@@ -69,10 +70,12 @@ $opaci: .5;
 
 	&:link {
 		color: $link;
+		opacity: $opaci;
 	}
 
 	&:visited {
-		color: $link;
+		color: $visit;
+		opacity: $opaci;
 	}
 
 	&:hover {
@@ -81,7 +84,7 @@ $opaci: .5;
 	}
 
 	&:active {
-		color: $hover;
+		color: $activ;
 		opacity: ($opaci - .2);
 	}
 
@@ -91,7 +94,7 @@ $opaci: .5;
 	}
 
 	&:visited:active {
-		color: $hover;
+		color: $activ;
 		opacity: ($opaci - .2);
 	}
 }

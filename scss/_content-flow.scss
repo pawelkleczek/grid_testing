@@ -1,13 +1,26 @@
 header {
-
+	margin-bottom: 20px;
+	margin-top: 15px;
 	h1 {
 		font-family: 'Amatic SC', cursive;
-		margin: 0 auto;
-		text-align: center;
 		font-size: 3.2rem;
+		line-height: 1em;
 
 		span {
 			color: $secondary-color;
+		}
+	}
+		h2 {
+			display: none;
+		}
+	@media (min-width: 35rem) {
+		h2 {
+			display: inline-block;
+			font-family: 'Amatic SC', cursive;
+			font-size: 1.8rem;
+			line-height: 3.2rem;
+			margin: 0 auto;
+			-webkit-transform: rotate(-10deg);
 		}
 	}
 
@@ -15,11 +28,11 @@ header {
 
 header + hr {
 	margin: 0 10px;
-	border: 2px dotted $secondary-color;
+
 }
 
 main {
-	color: rgba(0,0,0, 0.5);
+	color: $text-color;
 
 	.col-4, .col-8 {
 		padding-left: 10px;
@@ -58,8 +71,6 @@ main {
 
 	margin-top: 20px;
 
-
-
 	.more-info {
 		width: 100%;
 	}
@@ -78,26 +89,46 @@ main {
 	.fa {
 		color: $secondary-color;
 		float: left;
-		margin-left: 30%;
 	}
 
 	ul {
 		width: 80%;
-		margin: 0 auto;
+		margin: 10px auto;
+		padding-left: 10px;
 		border-left: 2px dotted $main-color;
-		padding: 5px;
 		list-style-type: none;
-		font-family: 'Nunito', cursive;
+		font-family: 'Nunito', sans-serif;
+		ul {
+			margin: 2px;
+		}
 	}
 }
 
 
 
 footer {
-	height: 20vh;
-	border: 1px solid $secondary-color;
-}
-
-p {
+	color: $text-color;
+	margin-top: 10px;
+	margin-bottom: 30px;
 	font-family: 'Nunito', sans-serif;
+
+	h2 {
+		color: black;
+		font-family: 'Amatic SC', cursive;
+		margin-left: 5px;
+		font-size: 2rem;
+	}
+	.fa {
+		float: left;
+		font-size: 2rem;
+		margin-top: 5px;
+	}
+		ul {
+			margin: 10px;
+			list-style-type: none;
+			border-left: 2px dotted $main-color;
+			 li {
+				margin: 5px;
+			}
+		}
 }

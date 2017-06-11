@@ -1,3 +1,8 @@
-@import 'colors';
-@import 'mixins-functions';
-@import 'content-flow';
+@import './partials/colors';
+@import './partials/fonts';
+@import './partials/grid';
+@import './partials/links';
+@import './content-flow/global';
+@import './content-flow/header';
+@import './content-flow/main';
+@import './content-flow/footer';

@@ -1,0 +1,71 @@
+.main {
+	color: $text-color;
+}
+
+.contact {
+
+	.contact__item {
+		border-bottom: 2px dashed $main-color;
+		margin-right: 10px;
+		line-height: 2.4rem;
+	}
+
+	.contact__icon {
+		float: left;
+		width: 40px;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.contact__text {
+		font-family: 'Amatic SC', cursive;
+		font-size: 1.8rem;
+		font-weight: 700;
+		margin-left: 15px;
+		display: block;
+		overflow: hidden;
+	}
+
+	.contact__link {
+		@include link;
+	}
+
+}
+
+.info {
+
+	.info-box__header {
+		line-height: 2rem;
+		overflow: hidden;
+	}
+
+	.info-box__link {
+		text-decoration: none;
+		@include link;
+	}
+
+	.info-box__text {
+		font-family: 'Amatic SC', cursive;
+		font-size: 2rem;
+		float: left;
+		margin-left: 10px;
+	}
+
+	.info-box__icon {
+		color: $secondary-color;
+		float: left;
+	}
+
+	.info-box__list {
+		width: 80%;
+		margin: 10px auto;
+		padding-left: 10px;
+		border-left: 2px dotted $main-color;
+		list-style-type: none;
+		font-family: 'Nunito', sans-serif;
+
+		.info-box__nested-list {
+			margin: 2px;
+		}
+	}
+}

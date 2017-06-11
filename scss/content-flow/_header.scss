@@ -1,0 +1,29 @@
+.header {
+
+	padding: 15px;
+}
+
+.logo__header {
+	font-family: 'Amatic SC', cursive;
+	font-size: 3.2rem;
+	line-height: 1;
+}
+
+.logo__element {
+	color: $secondary-color;
+}
+
+.header__conditional-title {
+	display: none;
+}
+
+@media (min-width: 35rem) {
+	.header__conditional-title {
+		display: inline-block;
+		font-family: 'Amatic SC', cursive;
+		font-size: 1.8rem;
+		line-height: 3.2rem;
+		margin: 0 auto;
+		-webkit-transform: rotate(-8deg);
+	}
+}

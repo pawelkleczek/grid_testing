@@ -1,11 +1,9 @@
 .footer {
+
 	color: $text-color;
 	margin-top: 10px;
 	margin-bottom: 30px;
 	font-family: 'Nunito', sans-serif;
-
-
-
 
 	.list {
 		margin: 10px;
@@ -14,5 +12,15 @@
 		 .list__item {
 			margin: 5px;
 		}
+	}
+}
+
+.agreement {
+	display: none;
+}
+
+@media print {
+	.agreement {
+		display: block;
 	}
 }

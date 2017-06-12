@@ -1,26 +1,29 @@
 .footer {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	.logo {
+		font-size: 1.8rem;
+	}
+}
 
+.list {
 	color: $text-color;
-	margin-top: 10px;
-	margin-bottom: 30px;
 	font-family: 'Nunito', sans-serif;
-
-	.list {
-		margin: 10px;
-		list-style-type: none;
-		border-left: 2px dotted $main-color;
-		 .list__item {
-			margin: 5px;
-		}
+	list-style-type: none;
+	border-left: 2px dotted $main-color;
+	 .list__item {
+		margin: 5px;
 	}
 }
 
 .agreement {
+	padding-top: 10px;
 	display: none;
 }
 
 @media print {
 	.agreement {
 		display: block;
+		color: $text-color;
 	}
 }

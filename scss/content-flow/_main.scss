@@ -1,71 +1,78 @@
 .main {
+	padding-top: 10px;
+}
+
+.contact-info {
+	border-bottom: 2px dashed $main-color;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.contact-info__icon {
 	color: $text-color;
+	float: left;
+	width: 30px;
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	margin: 0 10px;
+	@media screen and (min-width: 35rem) {
+		margin: 0;
+		margin-right: 5px;
+	}
 }
 
-.contact {
+.contact-info__text {
+	color: $text-color;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	display: block;
+	line-height: 2rem;
+}
 
-	.contact__item {
-		border-bottom: 2px dashed $main-color;
-		margin-right: 10px;
-		line-height: 2.4rem;
-	}
+.contact-info__link {
+	@include link;
+}
 
-	.contact__icon {
-		float: left;
-		width: 40px;
-		text-align: center;
-		font-size: 2rem;
-	}
+.infos {
+	padding-top: 10px;
+}
 
-	.contact__text {
-		font-family: 'Amatic SC', cursive;
-		font-size: 1.8rem;
-		font-weight: 700;
-		margin-left: 15px;
-		display: block;
-		overflow: hidden;
-	}
+.info-box__header {
+	padding: 2px;
+	line-height: 2rem;
+	overflow: hidden;
+}
 
-	.contact__link {
-		@include link;
-	}
+.info-box__link {
+	text-decoration: none;
+	@include link;
+}
+
+.info-box__text {
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	float: left;
+	margin-left: 10px;
+}
+
+.info-box__icon {
+	color: $secondary-color;
+	float: left;
+	width: 30px;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	text-align: center;
 
 }
 
-.info {
-
-	.info-box__header {
-		line-height: 2rem;
-		overflow: hidden;
-	}
-
-	.info-box__link {
-		text-decoration: none;
-		@include link;
-	}
-
-	.info-box__text {
-		font-family: 'Amatic SC', cursive;
-		font-size: 2rem;
-		float: left;
-		margin-left: 10px;
-	}
-
-	.info-box__icon {
-		color: $secondary-color;
-		float: left;
-	}
-
-	.info-box__list {
-		width: 80%;
-		margin: 10px auto;
-		padding-left: 10px;
-		border-left: 2px dotted $main-color;
-		list-style-type: none;
-		font-family: 'Nunito', sans-serif;
-
-		.info-box__nested-list {
-			margin: 2px;
-		}
-	}
+.info-box__list {
+	color: $text-color;
+	width: 80%;
+	padding-left: 10px;
+	border-left: 2px dotted $main-color;
+	list-style-type: none;
+	font-family: 'Nunito', sans-serif;
 }

@@ -1,29 +1,31 @@
 .header {
-
-	padding: 15px;
+	padding-top: 10px;
 }
 
-.logo__header {
+.logo {
 	font-family: 'Amatic SC', cursive;
-	font-size: 3.2rem;
+	font-size: 2rem;
 	line-height: 1;
+	width: 90%;
+	margin: 0 auto;
+	
 }
 
 .logo__element {
 	color: $secondary-color;
 }
 
-.header__conditional-title {
+.element_conditional {
 	display: none;
 }
 
-@media (min-width: 35rem) {
-	.header__conditional-title {
+@media screen and (min-width: 35rem) {
+	.element_conditional {
+		color: $text-color;
 		display: inline-block;
-		font-family: 'Amatic SC', cursive;
-		font-size: 1.8rem;
-		line-height: 3.2rem;
-		margin: 0 auto;
-		-webkit-transform: rotate(-8deg);
+		font-family: 'Nunito', sans-serif;
+		font-size: 1.2rem;
+		line-height: 2.2rem;
+		-webkit-transform: rotate(-6deg);
 	}
 }

@@ -1,6 +1,8 @@
 $cols: 12;
+$cols-print: 12;
 
 $width-base: (100%/$cols);
+$width-base-print: (100%/$cols-print);
 
 %clearfix {
 	&:before, &:after {
@@ -26,10 +28,18 @@ $width-base: (100%/$cols);
 	//gutter
 }
 
-@media (min-width: 35rem) {
+@media screen and (min-width: 35rem) {
 	@for $i from 1 through $cols {
 		.col-#{$i} {
 			width: $width-base*$i;
+		}
+	}
+}
+
+@media print and (min-width: 200px) {
+	@for $i from 1 through $cols-print {
+		.col-pr-#{$i} {
+			width: $width-base-print*$i;
 		}
 	}
 }

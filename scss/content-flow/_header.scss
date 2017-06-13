@@ -6,26 +6,16 @@
 	font-family: 'Amatic SC', cursive;
 	font-size: 2rem;
 	line-height: 1;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
-	
+	@media screen and (min-width: 35rem) {
+		width: 95%;
+	}
+	@media print and (min-width: 200px) {
+		width: 95%;
+	}
 }
 
 .logo__element {
 	color: $secondary-color;
-}
-
-.element_conditional {
-	display: none;
-}
-
-@media screen and (min-width: 35rem) {
-	.element_conditional {
-		color: $text-color;
-		display: inline-block;
-		font-family: 'Nunito', sans-serif;
-		font-size: 1.2rem;
-		line-height: 2.2rem;
-		-webkit-transform: rotate(-6deg);
-	}
 }

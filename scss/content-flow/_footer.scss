@@ -2,7 +2,18 @@
 	padding-top: 10px;
 	padding-bottom: 15px;
 	.logo {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
+		margin-bottom: 5px;
+	}
+}
+.experience {
+	width: 80%;
+	margin: 5px auto;
+	@media screen and (min-width: 35rem) {
+		width: 95%;
+	}
+	@media print and (min-width: 200px) {
+		width: 95%;
 	}
 }
 
@@ -11,8 +22,25 @@
 	font-family: 'Nunito', sans-serif;
 	list-style-type: none;
 	border-left: 2px dotted $main-color;
-	 .list__item {
-		margin: 5px;
+	padding-left: 10px;
+	margin: 0 auto;
+	margin-left: 25px;
+	.list {
+		margin-left: 0;
+	}
+	@media screen and (min-width: 35rem) {
+		margin-left: 15px;
+	}
+	@media print and (min-width: 200px) {
+		margin-left: 15px;
+	}
+	.list__item {
+		margin: 2px auto;
+		color: $text-color-darker;
+
+		.list__item {
+			color: $text-color;
+		}
 	}
 }
 
@@ -25,5 +53,7 @@
 	.agreement {
 		display: block;
 		color: $text-color;
+		font-size: .8rem;
+		margin-top: 10px;
 	}
 }

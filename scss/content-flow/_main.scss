@@ -4,8 +4,14 @@
 
 .contact-info {
 	border-bottom: 2px dashed $main-color;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
+	@media screen and (min-width: 35rem) {
+		width: 90%;
+	}
+	@media print and (min-width: 200px) {
+		width: 95%;
+	}
 }
 
 .contact-info__icon {
@@ -25,7 +31,7 @@
 .contact-info__text {
 	color: $text-color;
 	font-family: 'Nunito', sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-weight: 400;
 	display: block;
 	line-height: 2rem;
@@ -37,6 +43,19 @@
 
 .infos {
 	padding-top: 10px;
+}
+
+.info-box {
+	width: 80%;
+	margin: 0 auto;
+	@media screen and (min-width: 35rem) {
+		width: 90%;
+		margin-top: 10px;
+	}
+	@media print and (min-width: 200px) {
+		width: 90%;
+		margin-top: 10px;
+	}
 }
 
 .info-box__header {
@@ -70,9 +89,19 @@
 
 .info-box__list {
 	color: $text-color;
-	width: 80%;
 	padding-left: 10px;
+	margin-top: 5px;
+	margin-left: 25px;
 	border-left: 2px dotted $main-color;
 	list-style-type: none;
 	font-family: 'Nunito', sans-serif;
+	@media screen and (min-width: 35rem) {
+		margin-left: 15px;
+	}
+	@media print and (min-width: 200px) {
+		margin-left: 15px;
+	}
+}
+.info-box__list .info-box__list {
+	margin-left: 0;
 }

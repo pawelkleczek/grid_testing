@@ -2,7 +2,7 @@
 #### by Paweł Kłeczek
 
 Check it out live:
-https://serwer1591797.home.pl/cv/index.html
+https://pawelkleczek.github.io/myCv/
 
 ### What is it?
 

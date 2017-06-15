@@ -22,13 +22,15 @@ $width-base-print: (100%/$cols-print);
 }
 
 [class*='col-'] {
+	width: 100%;
 	float: left;
 	min-height: 1px;
-	width: 100%;
 	//gutter
 }
 
-@media screen and (min-width: 35rem) {
+
+
+@media screen and (min-width: 53rem) {
 	@for $i from 1 through $cols {
 		.col-#{$i} {
 			width: $width-base*$i;

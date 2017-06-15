@@ -9,7 +9,7 @@
 .experience {
 	width: 80%;
 	margin: 5px auto;
-	@media screen and (min-width: 35rem) {
+	@media screen and (min-width: 53rem) {
 		width: 95%;
 	}
 	@media print and (min-width: 200px) {
@@ -28,7 +28,7 @@
 	.list {
 		margin-left: 0;
 	}
-	@media screen and (min-width: 35rem) {
+	@media screen and (min-width: 53rem) {
 		margin-left: 15px;
 	}
 	@media print and (min-width: 200px) {
@@ -49,11 +49,12 @@
 	display: none;
 }
 
-@media print {
+@media print and (min-width: 200px) {
 	.agreement {
 		display: block;
+		position: relative;
 		color: $text-color;
 		font-size: .8rem;
-		margin-top: 10px;
+		bottom: 0;
 	}
 }

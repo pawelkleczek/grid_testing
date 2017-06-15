@@ -4,3 +4,19 @@
 	box-sizing: border-box;
 	-webkit-print-color-adjust: exact;
 }
+
+
+.page {
+	@media screen and (min-width: 53rem) {
+		box-shadow: 0px 0px 32px -4px rgba(158,139,158,1);
+		margin: 15px 15px;
+		padding: 15px 15px;
+	}
+	@media print and (min-width: 200px) {
+		box-shadow: 0px 0px 32px -4px rgba(158,139,158,1);
+		margin: 0;
+		padding: 0;
+	}
+	margin: 15px 0;
+
+}

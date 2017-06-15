@@ -6,13 +6,14 @@
 	border-bottom: 2px dashed $main-color;
 	width: 80%;
 	margin: 0 auto;
-	@media screen and (min-width: 35rem) {
+	@media screen and (min-width: 53rem) {
 		width: 90%;
 	}
 	@media print and (min-width: 200px) {
 		width: 95%;
 	}
 }
+
 
 .contact-info__icon {
 	color: $text-color;
@@ -22,7 +23,7 @@
 	font-size: 1.6rem;
 	line-height: 2rem;
 	margin: 0 10px;
-	@media screen and (min-width: 35rem) {
+	@media screen and (min-width: 53rem) {
 		margin: 0;
 		margin-right: 5px;
 	}
@@ -48,7 +49,7 @@
 .info-box {
 	width: 80%;
 	margin: 0 auto;
-	@media screen and (min-width: 35rem) {
+	@media screen and (min-width: 53rem) {
 		width: 90%;
 		margin-top: 10px;
 	}
@@ -95,7 +96,7 @@
 	border-left: 2px dotted $main-color;
 	list-style-type: none;
 	font-family: 'Nunito', sans-serif;
-	@media screen and (min-width: 35rem) {
+	@media screen and (min-width: 53rem) {
 		margin-left: 15px;
 	}
 	@media print and (min-width: 200px) {
